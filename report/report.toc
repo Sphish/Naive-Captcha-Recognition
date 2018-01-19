@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}算法简介}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}主要流程}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}验证码生成}{2}{subsection.1.2}
+\contentsline {paragraph}{算法目的}{2}{subsection.1.2}
+\contentsline {paragraph}{算法过程}{2}{Item.9}
+\contentsline {paragraph}{算法示例}{3}{Item.20}
+\contentsline {subsection}{\numberline {1.3}降噪与切割处理}{4}{subsection.1.3}
+\contentsline {paragraph}{算法目的}{4}{subsection.1.3}
+\contentsline {paragraph}{算法流程}{4}{Item.23}
+\contentsline {paragraph}{算法示例}{5}{Item.30}
+\contentsline {subsection}{\numberline {1.4}神经网络}{6}{subsection.1.4}
+\contentsline {paragraph}{主要思路}{6}{subsection.1.4}
+\contentsline {paragraph}{数据预处理}{6}{subsection.1.4}
+\contentsline {paragraph}{网络结构}{6}{subsection.1.4}
+\contentsline {paragraph}{训练方式}{6}{subsection.1.4}
+\contentsline {paragraph}{改进}{6}{subsection.1.4}
+\contentsline {section}{\numberline {2}算法与模型性能分析}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}代码与运行环境}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}验证码生成与切割算法}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}神经网络模型}{7}{subsection.2.3}
+\contentsline {paragraph}{无噪点数据集}{7}{subsection.2.3}
+\contentsline {paragraph}{一般数据集}{7}{subsection.2.3}

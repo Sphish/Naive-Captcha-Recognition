@@ -1,0 +1,35 @@
+随机生成一个四字字符串
+调用Draw的text方法 将DroidSansMono字体中的字以特定大小打在图片上
+噪点：
+	随机30个点，画一条宽度为3的线
+	draw.line(((x1, y1), (x1 - 1, y1 - 1)), fill=color, width=width)
+
+干扰线：
+	随机两个点 连线
+
+弯曲：
+	利用PIL.Image.QUAD方法 将图片重定义四个角
+	dx = w * random.uniform(0.1, 0.3)
+            dy = h * random.uniform(0.2, 0.3)
+            x1 = int(random.uniform(-dx, dx))
+            y1 = int(random.uniform(-dy, dy))
+            x2 = int(random.uniform(-dx, dx))
+            y2 = int(random.uniform(-dy, dy))
+            w2 = w + abs(x1) + abs(x2)
+            h2 = h + abs(y1) + abs(y2)
+            #set a new size to warp
+            data = (
+                x1, y1,
+                -x1, h2 - y2,
+                w2 + x2, h2 + y2,
+                w2 - x2, -y1,
+            )
+            im = im.resize((w2, h2))
+            im = im.transform((w, h), Image.QUAD, data)
+
+	先用dx,dy设置弯曲力度，再用x1,y1,x2,y2设置对角两个点的偏移量
+	最后将图片四个角重置为data中的格式
+
+最后利用PIL.ImageFilter 将原图高斯模糊
+
+这样就生成了一个验证码
